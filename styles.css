@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.home-page {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.home-page h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.home-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-image: url('images/image-8.png'); /* Adjust the path and image as needed */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    height: 75vh; /* Set height to 100 viewport height units */
+}
+
+.group-name {
+    font-size: 48px;
+    margin-top: 0;
+    padding-top: 30vh;
+}
+
+.banner-buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.banner-buttons a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.section.card {
+    background-color: #272727;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-title, .card-text {
+    color: #fff;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card-image {
+    flex-shrink: 0;
+    margin-left: 20px;
+    max-width: 50%;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.apply-button {
+    text-align: center;
+}
+
+.apply-button a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.apply-button a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.roles-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.role {
+    margin: 20px;
+    text-align: center;
+}
+
+.role img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.role-description {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.image-grid-item {
+    position: relative;
+    margin: 0; /* Adjust margin as needed */
+    padding: 0; /* Adjust padding as needed */
+}
+
+.image-grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-grid-item img:hover {
+    opacity: 0.1;
+    background-color: #000000;
+}
+
+.image-hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #fff; /* Text color */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-grid-item:hover .image-hover-content {
+    opacity: 1;
+}
+
+.campaign-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.operation-type, .operation-location {
+    margin: 0;
+}
+
+.image-grid-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay {
+    pointer-events: none; /* Allow hover effect to pass through overlay */
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}

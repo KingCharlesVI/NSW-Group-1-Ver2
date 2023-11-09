@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.navbar-left h2 {
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold; /* Set links to bold */
+}
+
+.navbar-links a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #fff; /* Keep text color on hover */
+}
