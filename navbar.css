@@ -33,3 +33,28 @@
     text-decoration: none; /* Remove underline on hover */
     color: #fff; /* Keep text color on hover */
 }
+
+.signup-link {
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.private-link {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.back-to-homepage {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-homepage:hover {
+    text-decoration: none;
+}

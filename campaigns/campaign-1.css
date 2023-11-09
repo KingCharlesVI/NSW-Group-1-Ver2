@@ -61,6 +61,10 @@
     margin-top: 50px;
 }
 
+.campaign-images img {
+    max-height: 50vh;
+}
+
 .footer {
     margin-top: 50px;
     text-align: center;
