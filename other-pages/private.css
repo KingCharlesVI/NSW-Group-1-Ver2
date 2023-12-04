@@ -1,0 +1,69 @@
+/* Add this to your existing CSS file or create a new one for campaign page */
+
+.private-page {
+    background-color: #353535; /* Dark grey background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.private-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.orbat-link {
+    text-align: center;
+}
+
+.orbat-link a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.orbat-link a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-image {
+    margin-left: 20px; /* Add some space between text and image */
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
