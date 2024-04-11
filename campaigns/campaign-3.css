@@ -1,0 +1,80 @@
+/* Add this to your existing CSS file or create a new one for campaign page */
+
+.campaign-page {
+    background-color: #353535; /* Dark grey background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.campaign-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.campaign-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.operation-type {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.location {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.date-time, .other-details {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.opord-button {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.opord-button .button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.opord-button .button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.campaign-images {
+    margin-top: 50px;
+}
+
+.campaign-images img {
+    max-height: 50vh;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
