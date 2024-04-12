@@ -44,7 +44,7 @@ The NSWG1 website is an open-source project. We are committed to a fully transpa
 
 Not sure where to start? Join our discord and we will help you get started!
 
-<a href="(https://discord.com/invite/xTGT2auk)"><img src="/images/discord_banner_blue.svg" /></a>
+<a href="(https://discord.com/invite/xTGT2auk)"><img src="/images/discord_banner_purple.svg" /></a>
 
 ## Contributors
 
