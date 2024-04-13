@@ -31,7 +31,7 @@
 
 .navbar-links a:hover {
     text-decoration: none; /* Remove underline on hover */
-    color: #fff; /* Keep text color on hover */
+    color: #3f3f3f; /* Keep text color on hover */
 }
 
 .signup-link {
