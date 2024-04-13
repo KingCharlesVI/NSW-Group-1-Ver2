@@ -34,12 +34,19 @@ body {
     padding: 0;
     margin: 0;
     height: 75vh; /* Set height to 100 viewport height units */
+    overflow: hidden;
+    background-attachment: fixed; /* Add parallax effect */
 }
 
 .group-name {
     font-size: 48px;
     margin-top: 0;
     padding-top: 30vh;
+    transition: transform 0.3s ease; /* Transition for parallax effect */
+}
+
+.banner-buttons {
+    margin-top: 20px;
 }
 
 .banner-buttons a {
@@ -60,6 +67,26 @@ body {
     color: #000000;
     cursor: pointer;
 }
+
+.scroll-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.scroll-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 
 /* Dropdown container */
 .dropdown {
