@@ -7,13 +7,15 @@
     text-align: center;
 }
 
-.private-title {
+.private-title,h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .orbat-link {
     text-align: center;
+    margin: 3vh; /* Find a way to stack them horizontally not vertically? */
 }
 
 .orbat-link a {
@@ -35,6 +37,12 @@
     cursor: pointer;
 }
 
+.flex-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Align items horizontally in the center */
+}
+
 .footer {
     margin-top: 50px;
     text-align: center;
@@ -47,11 +55,6 @@
     color: #007bff;
     text-decoration: none;
     margin-left: 10px;
-}
-
-.flex-container {
-    display: flex;
-    align-items: center;
 }
 
 .card-text {

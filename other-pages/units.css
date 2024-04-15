@@ -1,0 +1,204 @@
+/* Add this to your existing CSS file or create a new one for campaign page */
+
+.private-page {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.private-title,h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.orbat-link {
+    text-align: center;
+    margin: 3vh; /* Find a way to stack them horizontally not vertically? */
+}
+
+.orbat-link a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.orbat-link a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Align items horizontally in the center */
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-image {
+    margin-left: 20px; /* Add some space between text and image */
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 99.99999%;
+    overflow: hidden;
+}
+
+.card-title {
+    margin-top: 17.5vh;
+}
+
+.large-card-title {
+    margin-top: 17.5vh;
+    font-size: 500%;
+    transform: translateY(60%);
+}
+
+.card-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 17.5vh;
+}
+
+.large-section.card {
+    /* Styles for the larger card */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 99.99999%;
+    overflow: hidden;
+}
+
+.large-card-content {
+    /* Center the smaller cards horizontally */
+    display: flex;
+    justify-content: center;
+}
+
+.nsw-card-body {
+    background-image: url(https://i.imgur.com/8i49RLb.png);
+}
+
+.nsw-small-card-1 {
+    /* Styles for the smaller cards */
+    background-image: url(https://nswg1.com/images/image-8.png);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add spacing between the cards */
+    width: calc(50% - 20px); /* Adjust width based on margin and padding */
+}
+
+.nsw-small-card-2 {
+    /* Styles for the smaller cards */
+    background-image: url(https://i.imgur.com/sV0SXrw.png);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add spacing between the cards */
+    width: calc(50% - 20px); /* Adjust width based on margin and padding */
+}
+
+.afsoc-card-body {
+    background-image: url(https://i.imgur.com/qwGo2GZ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.afsoc-small-card-1 {
+    /* Styles for the smaller cards */
+    background-image: url(https://i.imgur.com/GfI5v1M.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add spacing between the cards */
+    width: calc(50% - 20px); /* Adjust width based on margin and padding */
+}
+
+.afsoc-small-card-2 {
+    /* Styles for the smaller cards */
+    background-image: url(https://i.imgur.com/zZtcYVm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add spacing between the cards */
+    width: calc(50% - 20px); /* Adjust width based on margin and padding */
+}
+
+.tf160-card-body {
+    background-image: url(https://i.imgur.com/iuFlSqS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tf160-small-card-1 {
+    /* Styles for the smaller cards */
+    background-image: url(https://i.imgur.com/ZMdUwlr.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add spacing between the cards */
+    width: calc(50% - 20px); /* Adjust width based on margin and padding */
+}
+
+.tf160-small-card-2 {
+    /* Styles for the smaller cards */
+    background-image: url(https://i.imgur.com/uuydw19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add spacing between the cards */
+    width: calc(50% - 20px); /* Adjust width based on margin and padding */
+}
+
+.nsw-body {
+    background-image: url(https://t4.ftcdn.net/jpg/03/53/31/69/360_F_353316914_m15Upk3Q32k9TAofycnosWeWRJOQ5Cmi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white overlay */
+    backdrop-filter: blur(2.5px); /* Apply blur effect */
+}
+
+.nsw-splitter {
+    max-width: 70%;
+}

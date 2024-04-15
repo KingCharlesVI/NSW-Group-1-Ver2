@@ -3,12 +3,14 @@ html, body {
 }
 
 body {
+    background-image: url(https://t4.ftcdn.net/jpg/03/53/31/69/360_F_353316914_m15Upk3Q32k9TAofycnosWeWRJOQ5Cmi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 .home-page {
-    background-color: #1e1e1e;
     color: #fff;
 }
 
@@ -28,18 +30,25 @@ body {
     position: relative;
     text-align: center;
     color: #fff;
-    background-image: url('images/image-8.png'); /* Adjust the path and image as needed */
+    background-image: url('images/image-30.png'); /* Adjust the path and image as needed */
     background-size: cover;
     background-position: center;
     padding: 0;
     margin: 0;
     height: 75vh; /* Set height to 100 viewport height units */
+    overflow: hidden;
+    background-attachment: fixed; /* Add parallax effect */
 }
 
 .group-name {
     font-size: 48px;
     margin-top: 0;
     padding-top: 30vh;
+    transition: transform 0.3s ease; /* Transition for parallax effect */
+}
+
+.banner-buttons {
+    margin-top: 20px;
 }
 
 .banner-buttons a {
@@ -59,6 +68,82 @@ body {
     background-color: #ffffff;
     color: #000000;
     cursor: pointer;
+}
+
+.scroll-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.scroll-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    font-weight: bold;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #333;
+}
+
+.navbar-links-socials:hover {
+    color: #353535;
 }
 
 .section.card {
