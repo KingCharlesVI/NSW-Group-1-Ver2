@@ -316,3 +316,29 @@ body {
     text-decoration: none;
     margin-left: 10px;
 }
+
+.server-status-widget {
+    display: flex;
+    align-items: center;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-text {
+    font-size: 14px;
+}
+
+/* Styling for online status */
+.status-indicator.online {
+    background-color: green;
+}
+
+/* Styling for offline status */
+.status-indicator.offline {
+    background-color: red;
+}
