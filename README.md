@@ -58,7 +58,3 @@ change the height and width for each of the contributors from 80 to 50.
 <a href="https://github.com/KingCharlesVI"><img src="https://avatars.githubusercontent.com/u/89871965?v=4" title="king-charles-vi" width="50" height="50"></a>
 
 [//]: contributor-faces
-
-## Copyright
-
-You may not use any item(s) contained within this github repository without express permision from the author.
