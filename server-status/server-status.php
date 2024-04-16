@@ -15,7 +15,7 @@ function isArmaServerOnline($serverIP, $serverPort) {
 
 // Example usage:
 $serverIP = '64.74.161.163';
-$serverPort = '2306';
+$serverPort = '2307';
 $status = isArmaServerOnline($serverIP, $serverPort);
 echo json_encode(array('isOnline' => $status));
 ?>
