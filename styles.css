@@ -305,6 +305,70 @@ body {
     pointer-events: none; /* Allow hover effect to pass through overlay */
 }
 
+/* Add your CSS styles for events list and event items here */
+.events-list {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.event {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 2px; /* Width of the vertical bar */
+    height: 100%; /* Height of the vertical bar */
+    background-color: #ccc; /* Color of the vertical bar */
+}
+
+.event-dot {
+    position: absolute;
+    left: -10px; /* Adjust the position of the dot */
+    top: 0;
+    width: 10px; /* Diameter of the dot */
+    height: 10px; /* Diameter of the dot */
+    border-radius: 50%;
+    background-color: #ccc; /* Color of the dot */
+    transform: translateY(-50%); /* Center the dot vertically */
+}
+
+.event h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.event-date {
+    font-style: italic;
+}
+
+.event-description {
+    margin-top: 5px;
+}
+
+/* Style for the upcoming event */
+.event:nth-child(1) .event-dot {
+    background-color: #ff5733; /* Color for the upcoming event dot */
+}
+
+/* Style for the next event */
+.event:nth-child(2) .event-dot {
+    background-color: #aaa; /* Color for the next event dot */
+}
+
+/* Style for the following event */
+.event:nth-child(3) .event-dot {
+    background-color: #ddd; /* Color for the following event dot */
+}
+
 .footer {
     margin-top: 50px;
     text-align: center;
@@ -315,30 +379,4 @@ body {
     color: #007bff;
     text-decoration: none;
     margin-left: 10px;
-}
-
-.server-status-widget {
-    display: flex;
-    align-items: center;
-}
-
-.status-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.status-text {
-    font-size: 14px;
-}
-
-/* Styling for online status */
-.status-indicator.online {
-    background-color: green;
-}
-
-/* Styling for offline status */
-.status-indicator.offline {
-    background-color: red;
 }
