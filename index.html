@@ -8,6 +8,16 @@
     <title>Naval Special Warfare Group 1</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="navbar.css">
+    <style>
+      /* CSS for fade-in animation */
+      .section.card {
+          opacity: 0.1;
+          transition: opacity 0.5s ease-in-out; /* Adjust the duration as needed */
+      }
+      .section.card.visible {
+          opacity: 1;
+      }
+  </style>
 </head>
 
 <body>
@@ -31,7 +41,7 @@
             <a href="https://youtube.com/playlist?list=PLmEj_ICG-GitF5XcFYie0cCW93e4N6VUJ&si=qDDAZoHGupJSGEwx" target="_blank" rel="noopener noreferrer" class="navbar-links-socials">Youtube</a>
             <a href="https://discord.gg/5W27B3xnw6" target="_blank" rel="noopener noreferrer" class="navbar-links-socials">Discord</a>
             <!--<a href="https://buy.stripe.com/6oEcNy9j313meB2cMM" target="_blank" rel="noopener noreferrer" class="navbar-links-socials">Donate</a>-->
-            <a href="https://forms.gle/KoiGnAuAcMnqP6gH9" target="_blank" rel="noopener noreferrer" class="signup-link">ENLIST</a>
+            <a href="/application-form.html" class="signup-link">ENLIST</a>
             <a href="https://docs.nswg1.com/login.html" class="private-link">LOG IN</a> <!-- Add this line -->
             </div>
         </div>
@@ -48,7 +58,7 @@
       </div>
       <!--<div class="banner-overlay"></div>-->
 
-        <div id="about-us" class="section card">
+        <div id="about-us" class="section card fade-in">
             <div class="card-body">
               <div class="card-content">
                 <div class="card-text">
@@ -64,7 +74,7 @@
             </div>
           </div>
   
-          <div id="requirements" class="section card">
+          <div id="requirements" class="section card fade-in">
             <div class="card-body">
               <div class="card-content">
                 <div class="card-text">
@@ -89,7 +99,7 @@
             </div>
           </div>
   
-        <div id="available-roles" class="section card">
+        <div id="available-roles" class="section card fade-in">
           <div class="card-body">
             <h2 class="card-title">Available Roles</h2>
             <ul class="roles-list">
@@ -164,16 +174,42 @@
                   <div class="image-grid-item">
                       <img src="images/image-28.png" alt="Campaign 2">
                       <div class="image-hover-content">
-                          <h3 class="campaign-title">Operation Force Guardian</h3>
+                          <h3 class="campaign-title">Operation Forge Guardian</h3>
                           <p class="operation-location">Yemen</p>
                       </div>
                   </div>
               </a>
         </div>
   
-        <div class="footer">
-          <p>&copy; 2024, KingCharlesVI (Version: 1.3.0)</p>
-        </div>
+        <footer class="footer">
+          <!-- Logos of military branches -->
+          <div class="footer-logos">
+              <img src="/images/seal.png" alt="Seal Logo">
+              <img src="/images/logo.png" alt="NSWG1 Logo">
+              <img src="/images/soar.png" alt="SOAR Logo">
+          </div>
+          
+          <!-- Copyright Information -->
+          <p class="copyright">© 2024 KingCharlesVI. All Rights Reserved. Version: BETA</p>
+      </footer>
       </main>
+
+      <script>
+        // JavaScript to add and remove 'visible' class when sections come into and out of view
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                const isVisible = rect.top <= windowHeight * 0.5 && rect.bottom >= 0;
+                if (isVisible) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

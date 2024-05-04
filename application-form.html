@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application | NSWG1</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+
+<div class="application-form-container">
+    <h1>NSWG1 Application Form</h1>
+    <form action="submit_application.php" method="post">
+        <div class="form-group">
+            <label for="initial">First Name Initial:</label>
+            <input type="text" id="initial" name="initial" placeholder="J" required>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Bloggs" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+                <option value="" disabled selected>Select Region</option>
+                <option value="West Coast USA">West Coast USA</option>
+                <option value="Central USA">Central USA</option>
+                <option value="East Coast USA">East Coast USA</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia/Oceania">Asia/Oceania</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="discord">Discord Username:</label>
+            <input type="text" id="discord" name="discord" placeholder=".jbloggs" required>
+        </div>
+        <div class="form-group">
+            <label for="steam">Steam Profile Link:</label>
+            <input type="text" id="steam" name="steam" placeholder="https://steamcommunity.com/profiles/12345678912345678/">
+        </div>
+        <div class="form-group">
+            <label for="mic">Do you have a mic?</label>
+            <select id="mic" name="mic" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
