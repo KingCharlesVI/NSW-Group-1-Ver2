@@ -2,18 +2,18 @@
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
-    $first_name = $_POST["first_name"];
-    $last_name = $_POST["last_name"];
+    $first_name = $_POST["initial"];
+    $last_name = $_POST["lastname"];
     $age = $_POST["age"];
     $region = $_POST["region"];
-    $discord_username = $_POST["discord_username"];
-    $steam_profile = $_POST["steam_profile"];
+    $discord_username = $_POST["discord"];
+    $steam_profile = $_POST["steam"];
     $mic = $_POST["mic"];
 
     // Construct message
     $message = "New Application:\n\n";
     $message .= "First Name Initial: $first_name\n";
-    $message .= "Full Last Name: $last_name\n";
+    $message .= "Last Name: $last_name\n";
     $message .= "Age: $age\n";
     $message .= "Region: $region\n";
     $message .= "Discord Username: $discord_username\n";
@@ -39,11 +39,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error sending application. Please try again later.";
     } else {
         // Application submitted successfully
-        echo "Application submitted successfully!";
+        echo "<div id='success-message'>Application submitted successfully! Redirecting in <span id='countdown'>5</span> seconds...</div>";
+        echo "<script>
+                var countdown = 5;
+                setInterval(function() {
+                    countdown--;
+                    document.getElementById('countdown').textContent = countdown;
+                    if (countdown <= 0) {
+                        window.location.href = 'index.html';
+                    }
+                }, 1000);
+              </script>";
     }
 } else {
     // Handle case where form is not submitted
     echo "Form submission error. Please try again.";
-    echo "<button onclick=\"window.location.href='index.html'\">Back to Homepage</button>";
 }
 ?>
