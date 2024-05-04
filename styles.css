@@ -381,13 +381,28 @@ body {
 }
 
 .footer {
-    margin-top: 50px;
+    background-color: #272727;
+    padding: 20px;
+    color: #fff;
     text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logos img {
+    width: 100px; /* Adjust size as needed */
+    margin: 0 10px; /* Add spacing between logos */
+}
+
+.copyright {
     font-size: 14px;
 }
 
-.footer a {
-    color: #007bff;
-    text-decoration: none;
-    margin-left: 10px;
+.beta-tag {
+    color: #ff5733;
 }
