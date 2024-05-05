@@ -14,6 +14,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.unit-logo {
+    display: block;
+    margin: 0 auto 20px; /* Adjust the margin as needed */
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
 h1 {
     text-align: center;
     color: #333;
@@ -32,11 +39,12 @@ label {
 input[type="text"],
 input[type="number"],
 select {
-    width: 100%;
+    width: calc(100%); /* Adjusted width to match the select element */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-right: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 button {

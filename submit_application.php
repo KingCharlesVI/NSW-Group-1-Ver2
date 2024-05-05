@@ -17,11 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Age: $age\n";
     $message .= "Region: $region\n";
     $message .= "Discord Username: $discord_username\n";
-    $message .= "Steam Profile: $steam_profile\n";
+    $message .= "Steam Profile: <$steam_profile\n>";
     $message .= "Mic: $mic\n";
 
     // Send message to Discord webhook
-    $webhook_url = "https://discord.com/api/webhooks/1236316242109927495/ssponkg2sVgcklbKqwXU_SbSq4aBiZ7_cAB2BjpZHf62u2KPvZhwpRctgud4877IHOyq";
+    $webhook_url = "https://discord.com/api/webhooks/1236626202261983253/L_541D2VL9AZg7E40Pxs9KVZmezAJrLblet8IeCIRRvozLyyk592kZDnVdQAxjHi1Nkz";
     $data = array("content" => $message);
     $options = array(
         "http" => array(
