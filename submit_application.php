@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Age: $age\n";
     $message .= "Region: $region\n";
     $message .= "Discord Username: $discord_username\n";
-    $message .= "Steam Profile: <$steam_profile\n>";
+    $message .= "Steam Profile: $steam_profile\n";
     $message .= "Mic: $mic\n";
 
     // Send message to Discord webhook
