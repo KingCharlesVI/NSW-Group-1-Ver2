@@ -84,3 +84,12 @@ button:hover {
     background-color: #007bff;
     border-radius: 5px;
 }
+
+.success-text {
+    color: #45a049;
+    text-align: center;
+}
+
+.signposting {
+    text-align: center;
+}
