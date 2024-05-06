@@ -57,17 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error sending application. Please try again later.";
     } else {
         // Application submitted successfully
-        echo "<div id='success-message'>Application submitted successfully! Updates on your application will be in the #application-status channel in the Discord server. Redirecting in <span id='countdown'>10</span> seconds...</div>";
-        echo "<script>
-                var countdown = 10;
-                setInterval(function() {
-                    countdown--;
-                    document.getElementById('countdown').textContent = countdown;
-                    if (countdown <= 0) {
-                        window.location.href = 'index.html';
-                    }
-                }, 1000);
-              </script>";
+        header('Location: /application-success.html');
+        exit;
     }
 } else {
     // Handle case where form is not submitted
