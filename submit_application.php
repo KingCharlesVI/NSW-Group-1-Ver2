@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error sending application. Please try again later.";
     } else {
         // Application submitted successfully
-        echo "<div id='success-message'>Application submitted successfully! Redirecting in <span id='countdown'>5</span> seconds...</div>";
+        echo "<div id='success-message'>Application submitted successfully! Updates on your application will be in the #application-status channel in the Discord server. Redirecting in <span id='countdown'>10</span> seconds...</div>";
         echo "<script>
-                var countdown = 5;
+                var countdown = 10;
                 setInterval(function() {
                     countdown--;
                     document.getElementById('countdown').textContent = countdown;
