@@ -381,6 +381,10 @@ body {
     background-color: #ddd; /* Color for the following event dot */
 }
 
+a {
+    text-decoration: none;
+}
+
 .footer {
     background-color: #272727;
     padding: 20px;
