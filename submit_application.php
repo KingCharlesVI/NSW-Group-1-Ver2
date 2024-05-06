@@ -9,6 +9,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $discord_username = $_POST["discord"];
     $steam_profile = $_POST["steam"];
     $mic = $_POST["mic"];
+    $join_reason = $_POST["join_reason"];
+    $unit_choice = $_POST["unit_choice"];
+    $arma_experience = $_POST["arma_experience"];
+    $unit_experience = $_POST["unit_experience"];
+    $other_units = $_POST["other_units"];
+    $leadership_experience = $_POST["leadership_experience"];
+    $real_life_experience = $_POST["real_life_experience"];
+    $dishonorably_discharged = $_POST["dishonorably_discharged"];
+    $recruitment_policy_confirmation = $_POST["recruitment_policy_confirmation"];
 
     // Construct message
     $message = "New Application:\n\n";
@@ -19,6 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Discord Username: $discord_username\n";
     $message .= "Steam Profile: $steam_profile\n";
     $message .= "Mic: $mic\n";
+    $message .= "Why do you want to join NSWG1: $join_reason\n";
+    $message .= "Unit Choice: $unit_choice\n";
+    $message .= "Arma Experience: $arma_experience\n";
+    $message .= "Unit Experience: $unit_experience\n";
+    $message .= "Other Units: $other_units\n";
+    $message .= "Leadership Experience: $leadership_experience\n";
+    $message .= "Real Life Experience: $real_life_experience\n";
+    $message .= "Dishonorably Discharged: $dishonorably_discharged\n";
+    $message .= "Recruitment Policy Confirmation: $recruitment_policy_confirmation\n";
 
     // Send message to Discord webhook
     $webhook_url = "https://discord.com/api/webhooks/1236626202261983253/L_541D2VL9AZg7E40Pxs9KVZmezAJrLblet8IeCIRRvozLyyk592kZDnVdQAxjHi1Nkz";
