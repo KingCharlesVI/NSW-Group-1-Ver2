@@ -36,8 +36,9 @@ body {
     background-position: center;
     padding: 0;
     margin: 0;
-    height: 75vh; /* Set height to 100 viewport height units */
+    height: 100vh; /* Set height to 100 viewport height units */
     overflow: hidden;
+    z-index: 1; /* Ensure the banner appears below the navbar */
 }
 
 .banner-overlay {
