@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-image: url(https://t4.ftcdn.net/jpg/03/53/31/69/360_F_353316914_m15Upk3Q32k9TAofycnosWeWRJOQ5Cmi.jpg);
+    background-image: url(/images/background.jpg);
     /*background-color: #000000;*/
     background-size: cover;
     background-repeat: no-repeat;
