@@ -6,12 +6,14 @@
     <title>Application | NSWG1</title>
     <link rel="stylesheet" href="application.css">
     <script src="/js/progress-bar.js"></script>
+    <script src="/js/char-count.js"></script>
 </head>
 <body>
 
 <div class="application-form-container">
     <img src="/images/nswg1.png" alt="Unit Logo" class="unit-logo">
     <h1>NSWG1 Application Form</h1>
+    <p>Questions with a * before them are required</p>
     <form action="submit_application.php" method="post">
         <div class="form-group">
             <label for="initial">*First Name Initial:</label>
@@ -55,7 +57,8 @@
         <h2>Additional Information</h2>
         <div class="form-group">
             <label for="join_reason">*Why do you want to join NSWG1? (Minimum 80 characters)</label>
-            <textarea id="join_reason" name="join_reason" rows="4" minlength="80" required></textarea>
+            <textarea id="join_reason" name="join_reason" rows="4" minlength="80" maxlength="500" required></textarea>
+            <span id="char-count">0/80</span>
         </div>
         <div class="form-group">
             <label for="unit_choice">*Which unit do you want to join?</label>
