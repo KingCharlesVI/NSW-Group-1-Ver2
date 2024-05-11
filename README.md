@@ -42,7 +42,7 @@ The NSWG1 website is an open-source project. We are committed to a fully transpa
 
 - Feature Request: If you have an idea or if there is a capability that is missing and would make development easier and more robust, please submit a [feature request](https://github.com/KingCharlesVI/NSW-Group-1-Ver2/issues/new).
 
-- Beta Programme: You can enroll in our beta testing programme to get access to the latest developments in order to help test them out.
+- 1.3.1 Programme: You can enroll in our 1.3.1 testing programme to get access to the latest developments in order to help test them out.
 
 Not sure where to start? Join our discord and we will help you get started!
 
