@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.application-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.unit-logo {
+    display: block;
+    margin: 0 auto 20px; /* Adjust the margin as needed */
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100%); /* Adjusted width to match the select element */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.form-section {
+    margin-top: 50px;
+}
+
+.progress {
+    margin-top: 20px;
+    height: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.success-text {
+    color: #45a049;
+    text-align: center;
+}
+
+.signposting {
+    text-align: center;
+    color: black;
+}
+
+.close-button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0683c9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.close-button:hover {
+    background-color: #0683c9;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

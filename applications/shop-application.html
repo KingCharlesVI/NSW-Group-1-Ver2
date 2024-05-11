@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application | NSWG1</title>
+    <link rel="stylesheet" href="application.css">
+    <!--<script src="/js/progress-bar.js"></script>-->
+    <script src="/js/char-count.js"></script>
+</head>
+<body>
+
+<div class="application-form-container">
+    <img src="/images/nswg1.png" alt="Unit Logo" class="unit-logo">
+    <h1>NSWG1 Application Form</h1>
+    <p>Questions with a * before them are required</p>
+    <form action="submit-shop.php" method="post">
+        <div class="form-group">
+            <label for="rank">*Rank:</label>
+            <select id="rank" name="rank" required>
+                <option value="" disabled selected>Select Rank</option>
+                <option value="CAPT">CAPT</option>
+                <option value="LCDR">LCDR</option>
+                <option value="SOCM">SOCM</option>
+                <option value="SOCS">SOCS</option>
+                <option value="SOC">SOC</option>
+                <option value="SO1">SO1</option>
+                <option value="SO2">SO2</option>
+                <option value="SO3">SO3</option>
+                <option value="MAJ">MAJ</option>
+                <option value="1LT">1LT</option>
+                <option value="CW5">CW5</option>
+                <option value="CW4">CW4</option>
+                <option value="CW3">CW3</option>
+                <option value="CW2">CW2</option>
+                <option value="WO1">WO1</option>
+                <option value="1st LT">1st LT</option>
+                <option value="2nd LT">2nd LT</option>
+                <option value="CMSgt">CMSgt</option>
+                <option value="SMSgt">SMSgt</option>
+                <option value="MSgt">MSgt</option>
+                <option value="TSgt">TSgt</option>
+                <option value="SSgt">SSgt</option>
+                <option value="SrA">SrA</option>
+                <option value="A1C">A1C</option>
+                <option value="LT">LT</option>
+                <option value="LTJG">LTJG</option>
+                <option value="ENS">ENS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="initial">*First Name Initial:</label>
+            <input type="text" id="initial" name="initial" placeholder="e.g. J" required>
+        </div>
+        <div class="form-group">
+            <label for="lastname">*Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="e.g. Doe" required>
+        </div>
+        <div class="form-group">
+            <label for="assignment_date">*Date of Assignment:</label>
+            <input type="date" id="assignment_date" name="assignment_date" required>
+        </div>
+        <div class="form-group">
+            <label for="admin_positions">*Have you ever held (or do you currently hold) any administrative positions within this unit?</label>
+            <select id="admin_positions" name="admin_positions" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="admin_position_details">If yes, which position(s)?</label>
+            <input type="text" id="admin_position_details" name="admin_position_details">
+        </div>
+        <div class="form-group">
+            <label for="shop_interest">*Which Shop(s) are you interested in?</label>
+            <select id="shop_interest" name="shop_interest" required>
+                <option value="" disabled selected>Select Shop</option>
+                <option value="J-1 Administration">J-1 Administration</option>
+                <option value="J-2 Intelligence">J-2 Intelligence</option>
+                <option value="J-3 Training-Development">J-3 Training and Development</option>
+                <option value="J-4 Logistics">J-4 Logistics</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sub_category_interest">*Which sub-category(ies) are you interested in?</label>
+            <select id="sub_category_interest" name="sub_category_interest" required>
+                <option value="" disabled selected>Select Sub-category</option>
+                <option value="J-1 Personnel">J-1 Personnel</option>
+                <option value="J-1 Library">J-1 Library</option>
+                <option value="J-1 Recruiting">J-1 Recruiting</option>
+                <option value="J-2 Zeus">J-2 Zeus</option>
+                <option value="J-2 Instructor">J-2 Instructor</option>
+                <option value="J-2 Intelligence">J-2 Intelligence</option>
+                <option value="J-3 Instructor Staff">J-3 Instructor Staff</option>
+                <option value="J-3 Training-and-Development">J-3 Training and Development</option>
+                <option value="J-4 Mod Team">J-4 Mod Team</option>
+                <option value="J-4 Server Team">J-4 Server Team</option>
+                <option value="J-4 Website Team">J-4 Website Team</option>
+                <option value="J-4 Task Manager">J-4 Task Manager</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="skills">*What skills can you bring to the team if accepted?</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="responsibility_confirmation">*Confirm that you understand that each position is one of responsibility and that you may be subject to removal or temporary suspension from your position if you are unable to complete responsibilities to the satisfaction of your supervisors</label>
+            <select id="responsibility_confirmation" name="responsibility_confirmation" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+        <!-- Add more form fields as needed -->
+
+        <!-- Progress bar
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div> -->
+    </div>
+    </form>
+</div>
+
+</body>
+</html>

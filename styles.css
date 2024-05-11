@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-image: url(https://t4.ftcdn.net/jpg/03/53/31/69/360_F_353316914_m15Upk3Q32k9TAofycnosWeWRJOQ5Cmi.jpg);
+    background-image: url(/images/background.jpg);
     /*background-color: #000000;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,8 +36,9 @@ body {
     background-position: center;
     padding: 0;
     margin: 0;
-    height: 75vh; /* Set height to 100 viewport height units */
+    height: 100vh; /* Set height to 100 viewport height units */
     overflow: hidden;
+    z-index: 1; /* Ensure the banner appears below the navbar */
 }
 
 .banner-overlay {
@@ -380,14 +381,33 @@ body {
     background-color: #ddd; /* Color for the following event dot */
 }
 
+a {
+    text-decoration: none;
+}
+
 .footer {
-    margin-top: 50px;
+    background-color: #272727;
+    padding: 20px;
+    color: #fff;
     text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logos img {
+    width: 100px; /* Adjust size as needed */
+    margin: 0 10px; /* Add spacing between logos */
+}
+
+.copyright {
     font-size: 14px;
 }
 
-.footer a {
-    color: #007bff;
-    text-decoration: none;
-    margin-left: 10px;
+.1.3.1-tag {
+    color: #ff5733;
 }
