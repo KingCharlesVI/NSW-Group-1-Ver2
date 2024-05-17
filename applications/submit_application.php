@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error sending application. Please try again later.";
     } else {
         // Application submitted successfully
-        header('Location: /application-success.html');
+        header('Location: /applications/application-success.html');
         exit;
     }
 } else {
